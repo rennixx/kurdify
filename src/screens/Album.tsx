@@ -46,8 +46,8 @@ export default function Album({ route }: AlbumProps) {
         <Image source={{ uri: album.cover_url }} style={styles.cover} />
       )}
       <Text style={styles.title}>{album.title}</Text>
-      {album.release_year && (
-        <Text style={styles.year}>{album.release_year}</Text>
+      {album.year && (
+        <Text style={styles.year}>{album.year}</Text>
       )}
       
       <Text style={styles.sectionTitle}>Tracks</Text>

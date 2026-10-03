@@ -5,7 +5,7 @@ export interface Album {
   title: string;
   artist_id: string;
   cover_url?: string;
-  release_year?: number;
+  year?: number;
   created_at?: string;
 }
 

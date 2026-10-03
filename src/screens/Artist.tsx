@@ -42,8 +42,8 @@ export default function Artist({ route }: ArtistProps) {
 
   return (
     <View style={styles.container}>
-      {artist.image_url && (
-        <Image source={{ uri: artist.image_url }} style={styles.image} />
+      {artist.photo_url && (
+        <Image source={{ uri: artist.photo_url }} style={styles.image} />
       )}
       <Text style={styles.name}>{artist.name}</Text>
       {artist.bio && <Text style={styles.bio}>{artist.bio}</Text>}

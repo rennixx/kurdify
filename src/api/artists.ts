@@ -4,7 +4,7 @@ export interface Artist {
   id: string;
   name: string;
   bio?: string;
-  image_url?: string;
+  photo_url?: string;
   created_at?: string;
 }
 

@@ -6,7 +6,11 @@ export interface Song {
   artist_id: string;
   album_id?: string;
   duration?: number;
-  audio_url: string;
+  genre?: string;
+  language?: string;
+  storage_path: string; // supabase storage path
+  cover_path?: string;
+  created_by?: string;
   created_at?: string;
 }
 

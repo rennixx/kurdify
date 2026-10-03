@@ -1,0 +1,31 @@
+{
+  "cli": {
+    "version": ">= 7.8.6"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "SUPABASE_URL": "@supabase_url",
+        "SUPABASE_ANON_KEY": "@supabase_anon_key"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "SUPABASE_URL": "@supabase_url",
+        "SUPABASE_ANON_KEY": "@supabase_anon_key"
+      }
+    },
+    "production": {
+      "env": {
+        "SUPABASE_URL": "@supabase_url",
+        "SUPABASE_ANON_KEY": "@supabase_anon_key"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
